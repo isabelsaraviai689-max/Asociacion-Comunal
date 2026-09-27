@@ -57,9 +57,11 @@ public class Main {
             if (nombre.isEmpty()) break;
             System.out.print("Contrasena: ");
             String clave = sc.nextLine().trim();
-
+          
+            // Valida las credenciales a traves del controlador de autenticacion
             Optional<Usuario> sesion = authController.login(nombre, clave);
             if (sesion.isEmpty()) {
+                // Si los datos no coinciden, muestra el error y vuelve a pedirlos
                 System.out.println("[!] Usuario o contrasena incorrectos.");
                 continue;
             }
