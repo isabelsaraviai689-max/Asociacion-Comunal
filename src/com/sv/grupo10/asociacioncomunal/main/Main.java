@@ -32,7 +32,7 @@ public class Main {
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         DatosDemo.cargarSiEsNecesario(socioDAO, cuotaDAO, usuarioDAO);
 
-        // Capa de logica de negocio
+        // Capa de la logica del negocio 
         AuthService authService = new AuthService(usuarioDAO);
         SocioService socioService = new SocioService(socioDAO);
         CuotaService cuotaService = new CuotaService(cuotaDAO, socioDAO);
