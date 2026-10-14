@@ -1,20 +1,20 @@
-package com.sv.grupo11.asociacioncomunal.main;
+package com.sv.grupo10.asociacioncomunal.main;
 
-import com.sv.grupo11.asociacioncomunal.concurrent.ProcesoCierreMensual;
-import com.sv.grupo11.asociacioncomunal.controller.AuthController;
-import com.sv.grupo11.asociacioncomunal.controller.CuotaController;
-import com.sv.grupo11.asociacioncomunal.controller.SocioController;
-import com.sv.grupo11.asociacioncomunal.dao.CuotaDAO;
-import com.sv.grupo11.asociacioncomunal.dao.SocioDAO;
-import com.sv.grupo11.asociacioncomunal.dao.UsuarioDAO;
-import com.sv.grupo11.asociacioncomunal.model.Usuario;
-import com.sv.grupo11.asociacioncomunal.service.AuthService;
-import com.sv.grupo11.asociacioncomunal.service.CuotaService;
-import com.sv.grupo11.asociacioncomunal.service.ReporteService;
-import com.sv.grupo11.asociacioncomunal.service.SocioService;
-import com.sv.grupo11.asociacioncomunal.ui.MenuBase;
-import com.sv.grupo11.asociacioncomunal.ui.MenuFactory;
-import com.sv.grupo11.asociacioncomunal.util.DatosDemo;
+import com.sv.grupo10.asociacioncomunal.concurrent.ProcesoCierreMensual;
+import com.sv.grupo10.asociacioncomunal.controller.AuthController;
+import com.sv.grupo10.asociacioncomunal.controller.CuotaController;
+import com.sv.grupo10.asociacioncomunal.controller.SocioController;
+import com.sv.grupo10.asociacioncomunal.dao.CuotaDAO;
+import com.sv.grupo10.asociacioncomunal.dao.SocioDAO;
+import com.sv.grupo10.asociacioncomunal.dao.UsuarioDAO;
+import com.sv.grupo10.asociacioncomunal.model.Usuario;
+import com.sv.grupo10.asociacioncomunal.service.AuthService;
+import com.sv.grupo10.asociacioncomunal.service.CuotaService;
+import com.sv.grupo10.asociacioncomunal.service.ReporteService;
+import com.sv.grupo10.asociacioncomunal.service.SocioService;
+import com.sv.grupo10.asociacioncomunal.ui.MenuBase;
+import com.sv.grupo10.asociacioncomunal.ui.MenuFactory;
+import com.sv.grupo10.asociacioncomunal.util.DatosDemo;
 
 import java.util.Optional;
 import java.util.Scanner;
