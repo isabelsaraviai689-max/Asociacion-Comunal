@@ -7,7 +7,7 @@ import com.sv.grupo10.asociacioncomunal.service.AuthService;
 import java.util.List;
 import java.util.Optional;
 
-/** CAPA CONTROLLER: recibe las peticiones de la UI y las delega al servicio. */
+/** CAPA CONTROLLE: recibe las peticiones de la UI y las delega al servicio. */
 public class AuthController {
 
     private final AuthService authService;
