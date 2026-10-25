@@ -1,9 +1,10 @@
 @echo off
-title Asociacion Comunal - Grupo 10
-if not exist out mkdir out
-dir /s /b src\*.java > fuentes.txt
-javac -d out @fuentes.txt
+title Asociacion Comunal - Grupo 11
+cd /d "%~dp0"
+where mvn >nul 2>nul || ( echo Maven no esta instalado. Abra el proyecto en IntelliJ y ejecute Main. & pause & exit /b 1 )
+echo [1/2] Compilando y empaquetando...
+call mvn -q clean package -DskipTests
 if errorlevel 1 ( echo Error al compilar. & pause & exit /b 1 )
-del fuentes.txt
-java -cp out com.sv.grupo10.asociacioncomunal.main.Main
+echo [2/2] Iniciando...
+java -jar target\asociacion-comunal.jar
 pause
